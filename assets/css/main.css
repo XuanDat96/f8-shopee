@@ -1,4 +1,11 @@
+
+.app{
+    overflow: hidden;
+}
+
+
 /* -------------------------CSS Header------------------------- */
+
 .header{
     height:var(--header-height);
     background-image: linear-gradient(0,#fe6433,#f53e2d);
@@ -405,6 +412,17 @@ margin-top: 18px;
     align-items: center;
     margin:0 8px;
 }
+/* mobile */
+.header__mobile-search
+{
+    display: none;
+}
+.header__mobile-search-icon
+{
+    font-size:2.6rem;
+    color:var(--white-color);
+}
+/* ---------------- */
 .header__logo
 {
     width:200px;
@@ -1262,11 +1280,14 @@ margin-top: 18px;
 .home-product__pagination
 {
     margin:48px 0 32px 0;
+    padding-left: 0;
+
 }
 .pagination{
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 .pagination-item{
     list-style: none;
